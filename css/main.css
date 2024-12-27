@@ -23,7 +23,9 @@
 }
 
 /*   FATHER CLASS START */
+
 .our-services {
+    max-width: 1400px;
     width: 100%;
     height: auto;
     padding: 50px 0px;
@@ -32,18 +34,22 @@
 }
 
 .about-all-doctors {
+    max-width: 1400px;
     width: 100%;
     background-color: var(--color-white-1);
     padding: 0px 0px 50px 0px;
 }
 
-.Price-list {
+.Price-list,
+.news-section {
+    max-width: 1400px;
     margin-top: 50px;
     width: 100%;
     padding: 0px 0px 50px 0px;
 }
 
 .foto-and-video {
+    max-width: 1400px;
     width: 100%;
     height: auto;
     padding: 50px 0px;
@@ -55,10 +61,12 @@
 /*    FATHER CLASS END*/
 
 /*     HEADER SECTION SATART    */
+
 .our-services-header,
 .foto-and-video-header,
 .about-all-doctors-header,
-.Price-list-header {
+.Price-list-header,
+.news-section-header {
     width: 90%;
     height: 200px;
     justify-content: start;
@@ -68,17 +76,18 @@
 .our-services-header h1,
 .about-all-doctors-header h1,
 .Price-list-header h1,
-.foto-and-video-header h1 {
+.foto-and-video-header h1,
+.news-section-header h1 {
     font-size: 50px;
 }
 
 .about-all-doctors-header h1,
-.Price-list-header h1 {
+.Price-list-header h1,
+.news-section-header h1 {
     color: var(--color-darck-blue-1);
 }
 
 /*     HEADER SECTION END       */
-
 
 /*     MAIN SECTION START       */
 
@@ -87,14 +96,20 @@ main {
 }
 
 .our-services-main,
-.Price-list-main {
+.Price-list-main,
+.news-section-main {
     width: 90%;
     height: auto;
     padding: 10px 0px;
     gap: 25px;
 }
 
-.our-services-main-cards {
+.news-section-main{
+    padding: 0px 0px 50px;
+}
+
+.our-services-main-cards,
+.news-section-main-cards {
     width: 300px;
     height: 350px;
     display: flex;
@@ -102,7 +117,12 @@ main {
     position: relative;
 }
 
-.our-services-main-cards img {
+.news-section-main-cards{
+    background-color: var(--color-red-1);
+}
+
+.our-services-main-cards img,
+.news-section-main-in-cards-head img {
     object-fit: cover;
     width: 100%;
     height: 250px;
@@ -122,13 +142,14 @@ main {
 
 /*     MAIN SECTION END         */
 
-
 /*    FOOTER SECTION START      */
+
 .our-services-footer,
 .about-all-doctors-footer,
 .about-all-doctors-footer,
 .Price-list-footer,
-.foto-and-video-footer {
+.foto-and-video-footer,
+.news-section-footer {
     width: 100%;
     height: 100px;
 }
@@ -191,6 +212,8 @@ section {
     align-items: center;
     justify-self: center;
 }
+
+/*   price list main section start */
 
 .team-container {
     display: grid;
@@ -274,6 +297,10 @@ section {
     color: var(--color-darck-blue-1);
 }
 
+/*   price list main section end */
+
+/*   foto and video main section start*/
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -347,5 +374,61 @@ section {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+}
+
+/*   foto and video mina section end  */
+
+.news-section-main-cards{
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.news-section-main-cards:hover{
+    border-radius: 0px;
+}
+
+.news-section-main-cards:hover .news-section-main-in-cards-head img{
+    border-radius: 0px;
+    height: 170px;
+    filter: brightness(100%);
+}
+
+.news-section-main-in-cards-head img{
+    height: 150px;
+    filter: brightness(50%);
+    transition: 0.5s ease;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.news-section-main-in-cards-main {
+    color: var(--color-white-1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news-section-main-in-cards-main h1{
+    font-size: 18px;
+}
+
+.news-section-main-in-cards-main p{
+    font-size: 16px;
+}
+
+.news-section-main-in-cards-main-btn{
+    width: 150px;
+    height: 40px;
+    background: none;
+    border: 1px solid var(--color-white-1);
+    border-radius: 20px;
+    color: var(--color-white-1);
+    transition: 0.5s ease;
+}
+
+.news-section-main-in-cards-main-btn:hover{
+    background-color: var(--color-white-1);
+    color: var(--color-red-1);
     cursor: pointer;
 }
