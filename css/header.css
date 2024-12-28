@@ -17,11 +17,11 @@
 }
 
 .header-left-part:hover{
-    flex: 1.5;
+    flex: 1.1;
 }
 
 .header-right-part:hover{
-    flex: 1.5;
+    flex: 1.1;
 }
 
 .header-left-part .position-img {
