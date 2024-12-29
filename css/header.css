@@ -175,3 +175,15 @@
         color: var(--color-red-1);
 }
 
+.respons-menu-btn{
+    width: 100px;
+    height: 100%;
+    background-color: var(--color-darck-blue-1);
+    display: none;
+    cursor: pointer;
+}
+
+.respons-menu-btn .bx{
+    font-size: 40px;
+    color: var(--color-white-1);
+}

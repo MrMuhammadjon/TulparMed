@@ -161,19 +161,58 @@
         z-index: 0;
     }
 
-    .team-card:nth-child(5){
+    .team-card:nth-child(5) {
         display: none;
     }
 
-    .team-card:nth-child(6){
+    .team-card:nth-child(6) {
         display: none;
     }
 
-    .team-card:nth-child(7){
+    .team-card:nth-child(7) {
         display: none;
     }
 
-    .team-card:nth-child(8){
+    .team-card:nth-child(8) {
         display: none;
+    }
+
+    .respons-menu-btn{
+        display: flex;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .our-services-header h1,
+    .about-all-doctors-header h1,
+    .Price-list-header h1,
+    .foto-and-video-header h1,
+    .news-section-header h1,
+    .question-and-ansvers-header h1,
+    .We-are-recommended-header h1,
+    .map-header h1 {
+        font-size: 35px;
+    }
+
+    .grid-item:nth-child(3){
+        display: none;
+    }
+
+    .grid-item:nth-child(8){
+        display: none;
+    }
+
+    .grid-item:nth-child(9){
+        grid-row-start: 0;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
     }
 }

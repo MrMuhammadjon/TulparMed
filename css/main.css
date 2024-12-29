@@ -245,6 +245,7 @@ main {
     font-weight: 500;
     transition: 0.5s ease;
     cursor: pointer;
+    z-index: 10;
 }
 
 .header-right-part-footer-btn,
