@@ -9,6 +9,12 @@
     .header-right-part-main {
         padding: 0px 70px;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
 }
 
 @media(max-width: 992px) {
@@ -34,7 +40,7 @@
 
     .header-left-part-main p,
     .header-right-part-main p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .header-left-part-main,
@@ -57,8 +63,101 @@
 }
 
 @media(max-width: 768px) {
+
     .header-left-part-main h1,
-    .header-right-part-main h1{
+    .header-right-part-main h1 {
         font-size: 18px;
+    }
+
+    .answers p {
+        margin: 10px 0;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+
+    .question-and-ansvers-main {
+        flex-direction: column;
+    }
+
+    .question {
+        gap: 50px;
+    }
+
+    .headre-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .header-left-part,
+    .header-right-part {
+        width: 100%;
+        max-width: 1400px;
+        padding: 50px 0;
+    }
+
+    .header-left-part-footer,
+    .header-right-part-footer {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 0px 50px;
+    }
+
+    .header-right-part-footer {
+        justify-content: start;
+    }
+
+    .header-left-part-main h1,
+    .header-right-part-main h1 {
+        font-size: 30px;
+    }
+
+    .response-header-elements {
+        display: none;
+    }
+
+    .table-container {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .service-table {
+        max-width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: start;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .grid-item:nth-child(4) {
+        display: none;
+    }
+
+    .grid-item:nth-child(5) {
+        display: none;
+    }
+
+    .grid-item:nth-child(6) {
+        display: none;
+    }
+
+    .grid-item:nth-child(7) {
+        display: none;
+    }
+
+    .position-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
     }
 }

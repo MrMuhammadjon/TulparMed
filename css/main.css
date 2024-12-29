@@ -1,4 +1,5 @@
 * {
+    transition: 0.3s ease-in;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -241,6 +242,7 @@ main {
 .about-all-doctors-footer-btn {
     color: var(--color-darck-blue-1);
     border: 1px solid var(--color-darck-blue-1);
+    z-index: 10;
 }
 
 .header-right-part-footer-btn:hover,
@@ -259,6 +261,11 @@ main {
 .foto-and-video-footer-btn:hover {
     background-color: var(--color-white-1);
     color: var(--color-darck-blue-1);
+}
+
+.map-footer{
+    height: auto;
+    padding: 0;
 }
 
 /*    FOOTER SECTION END        */
@@ -365,7 +372,7 @@ section {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
@@ -567,8 +574,8 @@ section {
     justify-content: space-between;
     max-width: 1400px;
     width: 90%;
+    height: 100%;
     margin: 50px auto;
-    padding: 100px 0 20px 0;
     border-radius: 5px;
 }
 
