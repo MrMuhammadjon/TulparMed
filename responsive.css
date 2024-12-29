@@ -160,4 +160,20 @@
         top: 0;
         z-index: 0;
     }
+
+    .team-card:nth-child(5){
+        display: none;
+    }
+
+    .team-card:nth-child(6){
+        display: none;
+    }
+
+    .team-card:nth-child(7){
+        display: none;
+    }
+
+    .team-card:nth-child(8){
+        display: none;
+    }
 }

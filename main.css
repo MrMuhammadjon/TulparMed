@@ -195,6 +195,15 @@ main {
 
 .We-are-recommended-main {
     justify-content: space-between;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.We-are-recommended-main img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    
 }
 
 .foto-and-video-main {
