@@ -1,8 +1,18 @@
+:root {
+    --color-white-1: #F9F9F9;
+    --color-white-2: #F3F5FA;
+    --color-white-3: #C5D9F3;
+    --color-red-1: #E95258;
+    --color-lightr-blue: #49647D;
+    --color-darck-blue-1: #32495E;
+    --color-darck-blue-3: #176BD9;
+    --color-liner-1: linear-gradient(0deg #222AE2, 100deg #00D1FF);
+    --color-liner-2: linear-gradient(0deg #1D44A0, 100deg #99DBFF);
+}
+
 .headre-section {
     width: 100%;
     height: 700px;
-    max-width: 1400px;
-    background-color: red;
     margin: auto;
     transition: 0.5s ease;
 }
@@ -53,7 +63,7 @@
 }
 
 .header-left-part-head,
-header-right-part-head {
+.header-right-part-head {
     width: 90%;
     height: 100px;
     gap: 10px;
@@ -78,3 +88,90 @@ header-right-part-head {
     color: var(--color-darck-blue-1);
     font-weight: 500;
 }
+
+.header-right-part-header ul a span{
+    color: var(--color-red-1);
+}
+
+.header-left-part-main,
+.header-right-part-main {
+    align-items: end;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 100px;
+    z-index: 1;
+}
+
+.header-right-part-main {
+    align-items: start;
+    width: 100%;
+    color: var(--color-darck-blue-1);
+}
+
+.header-left-part-main-p,
+.header-right-part-main-p {
+    gap: 10px;
+    font-weight: 200;
+}
+
+.header-left-part-footer,
+.header-right-part-footer {
+    height: 100px;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+
+
+
+
+
+/*   none  flex */
+
+.respons-header{
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-white-1);
+}
+
+.container-90{
+    max-width: 1400px;
+    width: 100%;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.respons-header-logo{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    color: var(--color-darck-blue-1);
+}
+
+.respons-header-logo img{
+    width: 65px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.response-header-elements{
+    flex: 1;
+}
+
+.response-header-elements ul{
+    flex: 1;
+    justify-content: space-between;
+}
+
+.response-header-elements ul a{
+    text-decoration: none;
+    color: var(--color-darck-blue-1);
+}
+
+.response-header-elements ul a .bx{
+        color: var(--color-red-1);
+}
+

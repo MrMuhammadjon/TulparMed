@@ -1,0 +1,64 @@
+@media(max-width: 1200px) {
+
+    .header-left-part-main h1,
+    .header-right-part-main h1 {
+        font-size: 28px;
+    }
+
+    .header-left-part-main,
+    .header-right-part-main {
+        padding: 0px 70px;
+    }
+}
+
+@media(max-width: 992px) {
+
+    .header-left-part-head,
+    .header-right-part-header {
+        display: none;
+    }
+
+    .header-left-part,
+    .header-right-part {
+        justify-content: space-evenly;
+    }
+
+    .respons-header {
+        display: flex;
+    }
+
+    .header-left-part-main h1,
+    .header-right-part-main h1 {
+        font-size: 23px;
+    }
+
+    .header-left-part-main p,
+    .header-right-part-main p {
+        font-size: 16px;
+    }
+
+    .header-left-part-main,
+    .header-right-part-main {
+        padding: 0px 50px;
+    }
+
+    .answers {
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .respons-header-logo {
+        flex: 0.5;
+    }
+
+    .response-header-elements {
+        flex: 1.5;
+    }
+}
+
+@media(max-width: 768px) {
+    .header-left-part-main h1,
+    .header-right-part-main h1{
+        font-size: 18px;
+    }
+}

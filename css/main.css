@@ -26,7 +26,6 @@
 /*   FATHER CLASS START */
 
 .our-services {
-    max-width: 1400px;
     width: 100%;
     height: auto;
     padding: 50px 0px;
@@ -36,7 +35,6 @@
 
 .about-all-doctors,
 .map {
-    max-width: 1400px;
     width: 100%;
     background-color: var(--color-white-1);
     padding: 0px 0px 50px 0px;
@@ -45,7 +43,6 @@
 .Price-list,
 .news-section,
 .We-are-recommended {
-    max-width: 1400px;
     margin-top: 50px;
     width: 100%;
     padding: 0px 0px 50px 0px;
@@ -53,7 +50,6 @@
 
 .foto-and-video,
 .question-and-ansvers {
-    max-width: 1400px;
     width: 100%;
     height: auto;
     padding: 50px 50px;
@@ -73,13 +69,15 @@
 .news-section-header,
 .We-are-recommended-header,
 .map-header {
+    max-width: 1400px;
     width: 90%;
     height: 200px;
     justify-content: start;
     color: var(--color-white-1);
 }
 
-.question-and-ansvers-header{
+.question-and-ansvers-header {
+    max-width: 1400px;
     width: 100%;
     height: 100px;
     background-color: var(--color-lightr-blue);
@@ -88,7 +86,8 @@
     padding: 0px 20px;
 }
 
-.We-are-recommended-header{
+.We-are-recommended-header {
+    max-width: 1400px;
     height: 100px;
 }
 
@@ -124,26 +123,42 @@ main {
 .news-section-main,
 .We-are-recommended-main,
 .map-main {
+    justify-content: space-between;
+    max-width: 1400px;
     width: 90%;
     height: auto;
     padding: 10px 0px;
     gap: 25px;
 }
 
-.news-section-main{
+.our-services-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.news-section-main {
     padding: 0px 0px 50px;
+    max-width: 1400px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
 }
 
 .our-services-main-cards,
 .news-section-main-cards {
-    width: 300px;
+    width: 100%;
     height: 350px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.news-section-main-cards{
+.news-section-main-cards {
     background-color: var(--color-red-1);
 }
 
@@ -155,7 +170,7 @@ main {
     height: 250px;
 }
 
-.map-main img{
+.map-main img {
     height: 360px;
 }
 
@@ -172,12 +187,18 @@ main {
 }
 
 .question-and-ansvers-main {
+    max-width: 1400px;
     padding: 0px 20px;
     color: var(--color-white-1);
 }
 
-.We-are-recommended-main{
+.We-are-recommended-main {
     justify-content: space-between;
+}
+
+.foto-and-video-main {
+    width: 90%;
+    max-width: 1400px;
 }
 
 
@@ -194,13 +215,7 @@ main {
 .map-footer {
     width: 100%;
     height: 100px;
-}
-
-.header-left-part-footer,
-.header-right-part-footer {
-    height: 100px;
-    width: 100%;
-    padding: 0px 100px;
+    padding: 70px;
 }
 
 .header-left-part-footer-btn,
@@ -262,18 +277,22 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 90%;
+    max-width: 1400px;
 }
 
 .team-card {
+    filter: brightness(95%);
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .team-card:hover {
+    filter: brightness(100%);
     transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -307,6 +326,7 @@ section {
 .table-container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .service-table {
@@ -347,7 +367,6 @@ section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 20px;
 }
 
 .grid-item {
@@ -421,23 +440,23 @@ section {
 
 /*   foto and video mina section end  */
 
-.news-section-main-cards{
+.news-section-main-cards {
     border-radius: 20px;
     transition: 0.5s ease;
 }
 
-.news-section-main-cards:hover{
+.news-section-main-cards:hover {
     border-radius: 0px;
     margin-top: -10px;
 }
 
-.news-section-main-cards:hover .news-section-main-in-cards-head img{
+.news-section-main-cards:hover .news-section-main-in-cards-head img {
     border-radius: 0px;
     height: 170px;
     filter: brightness(100%);
 }
 
-.news-section-main-in-cards-head img{
+.news-section-main-in-cards-head img {
     height: 150px;
     filter: brightness(50%);
     transition: 0.5s ease;
@@ -452,15 +471,15 @@ section {
     gap: 10px;
 }
 
-.news-section-main-in-cards-main h1{
+.news-section-main-in-cards-main h1 {
     font-size: 18px;
 }
 
-.news-section-main-in-cards-main p{
+.news-section-main-in-cards-main p {
     font-size: 16px;
 }
 
-.news-section-main-in-cards-main-btn{
+.news-section-main-in-cards-main-btn {
     width: 150px;
     height: 40px;
     background: none;
@@ -470,7 +489,7 @@ section {
     transition: 0.5s ease;
 }
 
-.news-section-main-in-cards-main-btn:hover{
+.news-section-main-in-cards-main-btn:hover {
     background-color: var(--color-white-1);
     color: var(--color-red-1);
     cursor: pointer;
@@ -511,7 +530,7 @@ section {
     padding: 10px 0;
 }
 
-.question span{
+.question span {
     font-size: 20px;
     font-weight: 700;
 }
@@ -525,7 +544,7 @@ section {
     transition: 0.5s ease;
 }
 
-.question .icon:hover{
+.question .icon:hover {
     transform: scale(2);
     background: var(--color-darck-blue-1);
 }
