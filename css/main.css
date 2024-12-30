@@ -1,5 +1,5 @@
 * {
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -199,11 +199,11 @@ main {
     flex-wrap: wrap;
 }
 
-.We-are-recommended-main img{
+.We-are-recommended-main img {
     object-fit: cover;
     width: 150px;
     height: 150px;
-    
+
 }
 
 .foto-and-video-main {
@@ -255,6 +255,13 @@ main {
     z-index: 10;
 }
 
+.header-right-part-footer-btn a,
+.about-all-doctors-footer-btn a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
 .header-right-part-footer-btn:hover,
 .about-all-doctors-footer-btn:hover,
 .Price-list-footer-btn:hover {
@@ -273,10 +280,22 @@ main {
     color: var(--color-darck-blue-1);
 }
 
-.map-footer{
+.map-footer {
     height: auto;
     padding: 0;
 }
+
+.header-right-part-footer-btn a,
+.header-left-part-footer-btn a{
+    text-decoration: none;
+    color: var(--color-red-1);
+}
+
+.header-left-part-footer-btn a{
+    color: var(--color-white-1);
+}
+
+
 
 /*    FOOTER SECTION END        */
 
@@ -458,13 +477,7 @@ section {
 /*   foto and video mina section end  */
 
 .news-section-main-cards {
-    border-radius: 20px;
     transition: 0.5s ease;
-}
-
-.news-section-main-cards:hover {
-    border-radius: 0px;
-    margin-top: -10px;
 }
 
 .news-section-main-cards:hover .news-section-main-in-cards-head img {
@@ -477,7 +490,7 @@ section {
     height: 150px;
     filter: brightness(50%);
     transition: 0.5s ease;
-    border-radius: 20px 20px 0px 0px;
+    order-radius: 20px 20px 0px 0px;
 }
 
 .news-section-main-in-cards-main {
@@ -511,7 +524,6 @@ section {
     color: var(--color-red-1);
     cursor: pointer;
 }
-
 
 .header {
     text-align: center;
@@ -551,7 +563,6 @@ section {
     font-size: 20px;
     font-weight: 700;
 }
-
 
 .question .icon {
     width: 20px;
@@ -605,4 +616,70 @@ section {
     color: #4A4A4A;
     margin: 5px 0;
     line-height: 1.5;
+}
+
+.menu-script {
+    max-width: 768px;
+    width: 300px;
+    height: 86vh;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--color-darck-blue-1);
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    right: -300px;
+    transition: 0.3s ease;
+    justify-content: space-evenly;
+}
+
+.menu-script-main ul {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    text-decoration: none;
+    align-items: start;
+}
+
+.menu-script-main ul a {
+    text-decoration: none;
+    color: var(--color-white-1);
+}
+
+.menu-script-main ul a:hover {
+    transform: translateX(10px);
+    color: var(--color-darck-blue-3);
+}
+
+.menu-script-main ul a .bx {
+    color: var(--color-red-1);
+}
+
+.open-class {
+    right: 0px;
+}
+
+.menu-script-footer {
+    gap: 20px;
+}
+
+.menu-script-footer button {
+    width: 70px;
+    height: 50px;
+    border: 1px solid var(--color-red-1);
+    background: none;
+    border-radius: 25px;
+    color: var(--color-white-1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-script-footer button:hover {
+    width: 100px;
+    color: var(--color-red-1);
+    background-color: var(--color-white-1);
+    border: 1px solid var(--color-white-1);
 }

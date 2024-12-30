@@ -10,10 +10,33 @@
     <link rel="stylesheet" href="../css/head.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <script src="../script/script.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <div id="menu-script" class="menu-script ols  placer">
+        <div class="menu-script-main">
+            <ul class="placer">
+                <a href="#">Главная</a>
+                <a href="#our-services">Наши услуги <i class='bx bx-caret-right'></i></a>
+                <a href="#foto-and-video">Отчеты</a>
+                <a href="#">О нас <i class='bx bx-caret-right'></i></a>
+                <a href="#news-section">Новости</a>
+                <a href="#">РУС <i class='bx bx-caret-right'></i></a>
+            </ul>
+        </div>
+        <div class="menu-script-footer placer">
+            <button>
+                RUS
+            </button>
+            <button>
+                UZB
+            </button>
+        </div>
+
+    </div>
 
     <div class="respons-header placer">
         <div class="container-90 placer">
@@ -23,15 +46,15 @@
             </div>
             <div class="response-header-elements placer">
                 <ul class="placer">
-                    <a href="">Главная</a>
-                    <a href="">Наши услуги <i class='bx bx-caret-right'></i></a>
-                    <a href="">Отчеты</a>
-                    <a href="">О нас <i class='bx bx-caret-right'></i></a>
-                    <a href="">Новости</a>
-                    <a href="">РУС <i class='bx bx-caret-right'></i></a>
+                    <a href="#">Главная</a>
+                    <a href="#our-services">Наши услуги <i class='bx bx-caret-right'></i></a>
+                    <a href="#foto-and-video">Отчеты</a>
+                    <a href="#">О нас <i class='bx bx-caret-right'></i></a>
+                    <a href="#news-section">Новости</a>
+                    <a href="#">РУС <i class='bx bx-caret-right'></i></a>
                 </ul>
             </div>
-            <div class="respons-menu-btn placer">
+            <div id="respons-menu-btn" class="respons-menu-btn placer">
                 <i class='bx bx-menu'></i>
             </div>
         </div>
@@ -39,7 +62,7 @@
 
     <div class="headre-section placer">
         <div class="header-left-part placer">
-            <img class="position-img" src="../img/head-book-img.png" alt="">
+            <img class="position-img position-img-1" src="../img/head-book-img.png" alt="">
             <div class="header-left-part-head placer">
                 <img src="../img/header-logo-img.png" alt="">
                 <h1>TULPAR</h1>
@@ -72,20 +95,22 @@
                 </div>
             </div>
             <div class="header-left-part-footer">
-                <button class="header-left-part-footer-btn">
-                    Все услуги
-                </button>
+                <a href="../newfile1/newfile1.html">
+                    <button class="header-left-part-footer-btn">
+                        Все услуги
+                    </button>
+                </a>
             </div>
         </div>
         <div class="header-right-part placer">
             <img class="position-img" src="../img/head-table-img.png" alt="">
             <div class="header-right-part-header">
                 <ul class="placer">
-                    <a href="">Главная</a>
-                    <a href="">Наши услуги <span><i class='bx bx-caret-right'></i></span></a>
-                    <a href="">Отчеты</a>
-                    <a href="">О нас <span><i class='bx bx-caret-right'></i></span></a>
-                    <a href="">Новости</a>
+                    <a href="#">Главная</a>
+                    <a href="#our-services">Наши услуги <span><i class='bx bx-caret-right'></i></span></a>
+                    <a href="#foto-and-video">Отчеты</a>
+                    <a href="#">О нас <span><i class='bx bx-caret-right'></i></span></a>
+                    <a href="#news-section">Новости</a>
                     <a href="">РУС <span><i class='bx bx-caret-right'></i></span></a>
                 </ul>
             </div>
@@ -116,16 +141,18 @@
                     <i class='bx bx-plus-medical'></i>Общеклинические исследования
                 </div>
             </div>
-            <div class="header-right-part-footer">
-                <button class="header-right-part-footer-btn">
-                    Все услуги
-                </button>
+            <div class="header-right-part-footer">  
+                <a href="../newfile1/newfile1.html">
+                    <button class="header-right-part-footer-btn">
+                            Все услуги
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 
     <main class="placer">
-        <section class="our-services">
+        <section class="our-services" id="our-services">
             <div class="our-services-header placer">
                 <h1>
                     наши услуги
@@ -165,7 +192,7 @@
                 </button>
             </div>
         </section>
-        <section class="about-all-doctors">
+        <section class="about-all-doctors" id="about-all-doctors">
             <div class="about-all-doctors-header placer">
                 <h1>
                     наши специалисты
@@ -227,7 +254,7 @@
                 </button>
             </div>
         </section>
-        <section class="Price-list">
+        <section class="Price-list" id="Price-list">
             <div class="Price-list-header">
                 <h1>
                     Прайс лист
@@ -304,7 +331,7 @@
                 </button>
             </div>
         </section>
-        <section class="foto-and-video">
+        <section class="foto-and-video" id="foto-and-video">
             <div class="foto-and-video-header placer">
                 <h1>
                     фото и видео отчеты
@@ -358,7 +385,7 @@
                 </button>
             </div>
         </section>
-        <section class="news-section">
+        <section class="news-section" id="news-section">
             <div class="news-section-header placer">
                 <h1>
                     Наши новости
@@ -444,7 +471,7 @@
                 </button>
             </div>
         </section>
-        <section class="question-and-ansvers">
+        <section class="question-and-ansvers" id="question-and-ansvers">
             <div class="question-and-ansvers-header placer">
                 <h1>
                     ВОПРОС ОТВЕТ
@@ -496,7 +523,7 @@
                 </div>
             </div>
         </section>
-        <section class="We-are-recommended">
+        <section class="We-are-recommended" id="We-are-recommended">
             <div class="We-are-recommended-header">
                 <h1>
                     Нас рекомендуют
@@ -510,7 +537,7 @@
                 <img src="../img/image 6.png" alt="">
             </div>
         </section>
-        <section class="map">
+        <section class="map" id="map">
             <div class="map-header placer">
                 <h1>
                     Контакты
