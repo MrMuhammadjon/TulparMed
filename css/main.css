@@ -50,7 +50,8 @@
 }
 
 .foto-and-video,
-.question-and-ansvers {
+.question-and-ansvers,
+.whey-we {
     width: 100%;
     height: auto;
     padding: 50px 50px;
@@ -69,7 +70,8 @@
 .Price-list-header,
 .news-section-header,
 .We-are-recommended-header,
-.map-header {
+.map-header,
+.whey-we-header {
     max-width: 1400px;
     width: 90%;
     height: 200px;
@@ -99,7 +101,8 @@
 .news-section-header h1,
 .question-and-ansvers-header h1,
 .We-are-recommended-header h1,
-.map-header h1 {
+.map-header h1,
+.whey-we-header h1 {
     font-size: 50px;
 }
 
@@ -211,6 +214,9 @@ main {
     max-width: 1400px;
 }
 
+.whey-we-main{
+    max-width: 1400px;
+}
 
 /*     MAIN SECTION END         */
 

@@ -1,0 +1,56 @@
+@media(max-width: 1600px){
+    .about-kardio-child h1{
+        font-size: 20px;
+    }
+    
+    .about-kardio-child p{
+        font-size: 18px;
+    }
+
+    .about-kardio-child h2{
+        font-size: 20px;
+    }
+
+    .about-kardio-child ol{
+        font-size: 18px;
+    }
+
+    .about-kardio-child:nth-child(2) {
+        flex: 2;
+    }
+    
+}
+
+@media(max-width: 1400px) {
+    .kardio-main h1{
+        font-size: 45px !important;
+    }
+
+    .kardio-main p{
+        font-size: 18px !important;
+    }
+}
+
+@media(max-width: 1200px) {
+    .kardio-main h1{
+        font-size: 40px !important;
+    }
+
+    .kardio-main p{
+        font-size: 18px !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .kardio-main h1{
+        font-size: 30px !important;
+    }
+
+    .kardio-main p{
+        font-size: 18px !important;
+    }
+
+    .about-kardio-child:nth-child(1){
+        display: none;
+    }
+}
