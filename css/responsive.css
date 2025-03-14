@@ -26,7 +26,7 @@
 
     .header-left-part,
     .header-right-part {
-        margin-top: 120px;
+        margin-top: 200px;
         justify-content: space-evenly;
     }
 
@@ -97,7 +97,7 @@
         padding: 50px 0;
     }
 
-    .header-left-part{
+    .header-left-part {
         margin-top: 100px;
     }
 
@@ -163,7 +163,7 @@
     .position-img {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 6.1% !important;
         z-index: 0;
     }
 
@@ -184,13 +184,13 @@
     }
 
     .respons-menu-btn {
-        display: flex;
+        display: flex !important;
     }
 
-    .container-90{
+    .container-90 {
         padding: 0 0 0 20px;
     }
-    
+
 }
 
 @media(max-width: 576px) {
@@ -229,4 +229,60 @@
         padding: 50px 10px;
     }
 
+}
+
+@media(max-width: 494px) {
+    .respons-header-logo {
+        gap: 10px;
+    }
+}
+
+.respons-header-logo h1 {
+    font-size: 25px !important;
+}
+
+
+.header-left-part-main h1,
+.header-right-part-main h1 {
+    font-size: 25px;
+}
+
+
+@media(max-width: 350px) {
+
+    .header-left-part-main p,
+    .header-right-part-main p {
+        font-size: 11px;
+    }
+
+    .header-left-part-main-p,
+    .header-right-part-main-p {
+        font-size: 13px;
+    }
+
+    .service-table td {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .service-table td:nth-child(2) {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .our-services-header h1,
+    .about-all-doctors-header h1,
+    .Price-list-header h1,
+    .foto-and-video-header h1,
+    .news-section-header h1,
+    .question-and-ansvers-header h1,
+    .We-are-recommended-header h1,
+    .map-header h1,
+    .whey-we-header h1 {
+        font-size: 25px;
+    }
+
+    .We-are-recommended-main {
+        justify-content: center;
+    }
 }
